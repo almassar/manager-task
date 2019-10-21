@@ -1,0 +1,128 @@
+.table{
+    .table-row-number, .table-action {
+        width: 60px;
+    }
+
+    td{
+        font-size: 13px;
+    }
+}
+
+.table thead th {
+    color:rgb(103, 106, 108);
+
+    border-top: 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+
+
+.table-flexbox{
+
+    width: calc(100vw - 70px);
+
+    @include media-breakpoint-down(xs) {
+        width: calc(100vw - 45px);
+    }
+
+    overflow-x: scroll;
+
+    .row-head{
+        font-weight: 500;
+    }
+
+    .row-head, .row-content{
+        display: flex;
+    }
+
+    .th-ex, .td-ex{
+        border: 1px solid #eee;
+        border-left: 0;
+        border-bottom: 0;
+        padding: 8px 5px;
+        font-size: 12px;
+        box-sizing: border-box;
+        width: 60px;
+        flex-wrap: nowrap;
+        flex: 0 0 auto;
+    }
+
+    .td-ex:last-child, .th-ex:last-child{
+
+    }
+
+    .th-first, .td-first{
+        flex-basis: 140px !important;
+        width: 140px;
+        position: absolute;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .th-first + .th-ex, .td-first + .td-ex{
+        margin-left: 140px;
+
+    }
+}
+
+.table-compact {
+    margin-top: 15px;
+    table-layout:fixed;
+    white-space: nowrap;
+
+
+    td, th{
+        font-size: 12px;
+        border: 1px solid #eee;
+        padding: 8px 2px;
+        min-width: 100px !important;
+    }
+
+    th{
+        border-top: 1px solid #eee !important;
+    }
+
+    .table-small-td{
+
+
+    }
+}
+
+.table-task{
+    td{
+        font-size: 13px;
+    }
+
+    .task-executer{
+        font-weight: 600;
+    }
+
+    .task-overdue{
+        a{
+            color:red;
+        }
+    }
+
+    .task-finish{
+        a{
+            color:green;
+        }
+    }
+}
+
+
+.table-dashboard-organization{
+    > tr td{
+        border-bottom: 3px solid #eee !important;
+    }
+
+    table{
+        tr:first-child{
+            td {
+                border: 0;
+                padding-top: 0;
+            }
+        }
+
+    }
+}

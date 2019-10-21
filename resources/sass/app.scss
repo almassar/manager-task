@@ -1,0 +1,11 @@
+@import "variables";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
+
+@import "app/default.scss";
+@import "app/table.scss";
+@import "app/sidebar.scss";
+@import "app/content.scss";
+@import "app/calendar.scss";

@@ -1,0 +1,334 @@
+html, body, #vue-app {
+    height: 100%;
+}
+
+.wrapper{
+    display: flex;
+    min-height: 100%;
+}
+
+main{
+    flex-grow: 1;
+
+    padding: 15px 15px 15px 15px;
+
+    @include media-breakpoint-down(xs) {
+        padding: 10px 5px 0 5px;
+    }
+}
+
+.title-panel{
+
+    margin-bottom: 15px;
+
+    .row{
+        border-bottom: 3px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    h1 {
+        font-weight: 400;
+        color: #383838;
+        font-size: 20px;
+        margin-bottom: 0;
+
+        @include media-breakpoint-down(xs) {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+    }
+
+    span{
+        margin-right: 5px;
+    }
+}
+
+footer{
+    margin-top: 10px;
+    background: #eee;
+    padding: 10px;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.title-page{
+    color: #383838;
+    font-size: 16px;
+    border-bottom: 3px solid #eee;
+    padding-bottom: 5px;
+}
+
+.alert{
+    margin-top: 20px;
+    span{
+        margin-right: 5px;
+    }
+}
+
+.form-well{
+    overflow: hidden;
+    padding: 20px;
+    border: 3px solid #eee;
+    border-radius: 0;
+
+    @include media-breakpoint-down(xs) {
+        padding: 0;
+        border: 0;
+    }
+
+    button{
+        float: right;
+        span{
+            margin-right: 5px;
+        }
+    }
+
+    .form-check{
+        float: left;
+        margin-top: 5px;
+        label{
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.form-sub-well{
+
+    background-color: #f6f6f6;
+    overflow: hidden;
+    padding: 12px;
+
+    input, button{
+        font-size: 13px;
+    }
+
+    button{
+        float: right;
+        span{
+            margin-right: 5px;
+        }
+    }
+}
+
+.login-page{
+    flex-grow: 1;
+
+    background: #44C3E6;
+
+    form{
+        background: white;
+        padding: 25px;
+    }
+
+
+    .form-group{
+        margin-bottom: 30px;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    h3{
+        text-align: center;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.list-contact{
+    font-size: 13px;
+    color:#0b2e13;
+
+    li{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #eee;
+        margin-bottom: 10px;
+    }
+
+    li:last-child{
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+.list-border{
+    li{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid silver;
+        margin-bottom: 12px;
+
+        &:last-child{
+            border-bottom: 0;
+            margin-bottom: 5px;
+        }
+    }
+
+    margin-bottom: 20px;
+}
+
+.panel-sub{
+    background: #eeeeee;
+    padding: 7px 10px;
+
+    @include media-breakpoint-down(xs) {
+        padding: 0;
+        background: white;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+
+        li{
+            text-align: center;
+        }
+    }
+    a{
+
+        color:#383838;
+    }
+
+    @include media-breakpoint-down(sm) {
+        form{
+            margin-top: 10px;
+        }
+
+    }
+}
+
+.list-form-product, .list-form-service{
+    margin-top: 10px;
+    margin-left: 20px;
+
+    li {
+        border-bottom: 1px solid #eeeeee;
+        margin-bottom: 10px;
+    }
+}
+
+
+.title-reminder{
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 6px 0;
+    background: white;
+    margin: 0 5px 6px;
+}
+
+.reminder-animation{
+    animation: colorchange 1s infinite ;
+}
+
+@keyframes colorchange {
+    0%{
+        background: #FA8072;
+    }
+
+    100%  {
+        background: #FFFF66;
+    }
+}
+
+.reminders{
+    padding: 0 5px;
+    font-size: 13px;
+
+    span{
+        color: orangered;
+    }
+    a{
+        display: inline !important;
+    }
+
+    li{
+        padding: 4px;
+        margin-bottom: 10px;
+        background: white;
+    }
+}
+
+.panel-month{
+    padding: 20px 0 0 0;
+
+    a{
+        font-size: 15px;
+        margin-right: 20px;
+        text-transform: uppercase;
+    }
+}
+
+.journals-search{
+    margin-top: 20px;
+    a{
+        font-size: 15px;
+    }
+    li{
+        margin-bottom: 20px;
+    }
+
+    span{
+        margin-right: 15px;
+    }
+}
+
+.list-user-journals{
+
+}
+
+
+.list-service-dashboard{
+    > li {
+        margin-bottom: 10px;
+        div:first-child{
+            font-size: 14px;
+        }
+    }
+}
+
+.task-form-info{
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.list-add-executer{
+    font-size: 13px;
+    li{
+        border-bottom: 1px solid silver;
+        margin-bottom: 8px;
+    }
+}
+
+.list-comment{
+    margin-bottom: 20px;
+    li{
+        margin-bottom: 15px;
+    }
+}
+
+.notifications{
+    padding: 0 5px;
+
+}
+
+
+.organization-notes{
+    margin-top: 10px;
+    li{
+        background: #eee;
+        padding: 7px;
+        margin-bottom: 20px;
+    }
+}

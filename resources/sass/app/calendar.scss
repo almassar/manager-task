@@ -1,0 +1,93 @@
+.calendar-month-title{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.calendar-active{
+    display: table !important;
+}
+
+.calendar-month{
+    width: 100%;
+
+    display: none;
+
+    td, th{
+        border: 1px solid #eee;
+        padding: 10px;
+        text-align: center;
+    }
+
+    td{
+        position: relative;
+    }
+}
+
+.calendar-task{
+    background: orangered;
+    color: white;
+    cursor: pointer;
+
+     &:hover .list-task-day{
+         display: block;
+     }
+}
+
+.list-task-day{
+    z-index: 10;
+    display: none;
+    position: absolute;
+    bottom:100%;
+    left: 0;
+    background: #636b6f;
+    font-size: 13px;
+    padding: 7px;
+    min-width: 200px;
+
+}
+
+.list-dashboard-month{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #eeeeee;
+    padding: 5px 0;
+    width: 100%;
+
+    .month-active-link{
+        font-size: 20px;
+        color: #636b6f;
+        cursor: default;
+        text-decoration: none;
+    }
+
+    a{
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+}
+
+.not-finished-tasks{
+    li{
+        display: none;
+        margin-bottom: 10px;
+    }
+
+    .active-task{
+        display: block !important;
+    }
+}
+
+.not-finished-title{
+    font-size: 20px;
+    background: #eeeeee;
+    padding: 5px 10px;
+    color: #636b6f;
+    margin-bottom: 5px;
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 15px;
+    }
+}
+
+

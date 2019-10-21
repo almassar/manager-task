@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+input:-webkit-autofill{
+    box-shadow:inset 0 0 0 1000px #fff;
+}
+
+ul{
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.debug-size-screen{
+    position: fixed;
+    bottom: 0;
+    background: red;
+    color:white;
+    padding: 5px 8px;
+    font-weight: 500;
+}
+
+.btn-primary{
+    background: #428BCA;
+}
+
+a{
+    color:#428BCA;
+}
+
+label{
+    margin-bottom: 2px;
+    font-weight: 500;
+}
